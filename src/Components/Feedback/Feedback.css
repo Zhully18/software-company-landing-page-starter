@@ -1,0 +1,83 @@
+.feedback{
+    padding: 5px 85px;
+    height: 25vh;
+}
+.feedback h5,
+.feedback h3{
+    text-align: center;
+}
+.feedback h5{
+    font-size: 20px;
+}
+.feedback h3{
+    font-size: 35px;
+    margin-top: 15px;
+}
+.feedback .customers{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+.feedback .customers .item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.feedback .customers .item .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.feedback .customers .item .user img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.feedback .customers .item .user h5{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.feedback .customers .item .user p{
+    font-size: 12px;
+}
+.feedback .customers .item .comment{
+    color: gold;
+}
+
+@media screen and (max-width: 480px){
+    .feedback{
+        margin-top: 20px;
+        padding: 5px 45px;
+    }
+    .feedback h5, 
+    .feedback h3{
+        text-align: left;
+    }
+    .feedback h5{
+        font-size: 16px;
+    }
+    .feedback h3{
+        font-size: 18px;
+        color: #666;
+    }
+    .feedback .customers{
+        flex-direction: column;
+    }
+    .feedback .customers .item{
+        padding: 10px;
+    }
+    .feedback .customers .item p{
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    .feedback .customers .item .comment h2{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,104 @@
+.details{
+    display: flex;
+    padding-inline: 100px;
+    justify-content: space-between;
+    height: 120vh;
+    margin-top: 400px;
+    background-color: #f9f9f9;
+    gap: 50px;
+}
+.left-details , .right-details{
+    margin-top: 50px;
+}
+.left-details img{
+    width: 500px;
+    height: 720px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+.right-details{
+    display: flex;
+    flex-direction: column;
+}
+.right-details h2{
+    font-size: 30px;
+    text-align: start;
+    margin-top: 20px;
+}
+.box_container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.box_container .box{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 270px;
+    gap: 20px;
+    border-radius: 20px;
+    border: 1px solid #666;
+}
+.detail_icon{
+    background-color: #000;
+    display: inline-block;
+    padding: .4rem;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-bottom: -1rem;
+}
+.detail_icon .icon{
+    margin-bottom: 20px;
+    font-size: 22px;
+    margin-left: 3px;
+    color: #fff;
+}
+.detail_head, .text{
+    margin-left: 15px;
+}
+.text{
+    text-align: start;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 480px){
+    .details .left-details img{
+        display: none;
+    }
+    .details {
+        margin-top: 1750px;
+    }
+    .right-details .right_header{
+        text-align: start;
+        font-size: 25px;
+        margin-left: -100px;
+    }
+    .details .box_container{
+        justify-content: center;
+        gap: -20px;
+        margin-left: -120px;
+        grid-template-columns: 1fr;
+    }
+    .details .box_container .box{
+        width: 270px;
+        height: 200px;
+    }
+    .detail_icon{
+        width: 20px;
+        height: 18px;
+    }
+    .detail_icon .icon{
+        font-size: 16px;
+    }
+    .box_container .detail_head{
+        font-size: 18px;
+        margin-left: 7px;
+    }
+    .box_container .text{
+        font-size: 14px;
+    }
+}

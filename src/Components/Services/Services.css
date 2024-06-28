@@ -1,0 +1,86 @@
+.services{
+    height: 70vh;
+}
+.service_header, 
+.text{
+    text-align: center;
+}
+.text{
+    font-size: 18px;
+}
+.service_header{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.service_container{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 150px;
+    gap: 30px;
+    margin-top: 60px;
+}
+.service_list{
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 280px;
+    padding-inline: 30px;
+    padding-top: 30px;
+}
+.service_list:hover{
+    background-color: #000;
+    color: #fff;
+}
+.service_list:nth-child(1){
+    background-color: #000;
+    color: #fff;
+}
+.service_list:nth-child(1):hover{
+    background-color: #f9f9f9;
+    color: #000;
+}
+.service_list .service_icon{
+    display: inline-block;
+    padding: .6rem;
+    width: 35px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #000;
+}
+.service_list .service_icon .icon{
+    font-size: 2rem;
+    margin-top: -1.5px;
+    color: #fff;
+}
+.service_list h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.service_list p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+.service_list .action{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+.service_list .action h2{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 480px){
+    .services .service_header{
+        font-size: 25px;
+        text-align: center;
+    }
+    .service_container{
+        grid-template-columns: 1fr;
+        padding-inline: 30px;
+    }
+    .service_list .action{
+        margin-top: -10px;
+    }
+}

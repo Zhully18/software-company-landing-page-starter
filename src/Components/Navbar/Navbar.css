@@ -1,0 +1,94 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    color: #000;
+}
+.nav-logo h2{
+    font-size: 1.5rem;
+}
+.navlinks ul{
+    display: flex;
+    gap: 1rem;
+}
+.navlinks ul li{
+    color: #666;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navlinks ul li:hover{
+    color: #000;
+    cursor: pointer;
+}
+.navbar .btn button{
+    margin-left: 1rem;
+    padding: 0.8rem 2rem;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-weight: 600;
+}
+.navbar .btn button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.navbar.active{
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #dbe9db;
+    box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+.navbar .toggle{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    .nav-logo h2{
+        margin-left: -100px;
+    }
+    .navbar .navlinks, .btn{
+        display: none;
+    }
+    .navbar .link{
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        left: 0;
+        top: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 888;
+    }
+    .navbar ul li{
+        width: 100%;
+        text-transform: uppercase;
+        line-height: 70px;
+        font-weight: 600;
+        margin-left: 20px;
+        color: #424040;
+    }
+    .navbar ul li:hover{
+        color: #666;
+    }
+    .navbar .toggle{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #fff;
+        border: none;
+        display: block;
+        font-size: 30px;
+        z-index: 999;
+    }
+    .close{
+        right: 45%;
+    }
+}
